@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>news-website</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="flex main-nav container">
+        <div class="left">
+          <a href="#" onclick="reload()">
+            <img src="logo.png" alt="company-logo" class="company-logo" />
+          </a>
+        </div>
+        <div class="middle flex">
+          
+          <ul class="flex nav-link">
+            <li class="nav-item" id="G20" onclick="onNavItemClick('G20')">G20</li>
+            <li class="nav-item" id="finance" onclick="onNavItemClick('finance')">Finance</li>
+            <li class="nav-item" id="politics" onclick="onNavItemClick('politics')">Politics</li>
+            <li class="nav-item" id="technology" onclick="onNavItemClick('technology')">Technology</li>
+            <li class="nav-item" id="startup" onclick="onNavItemClick('startup')">Startup</li>
+          </ul>
+        </div>
+        <div class="right flex">
+          
+          <input type="text" placeholder="eg:Science" class="news-input"  id="text-input"/>
+          <button class="search-btn" id="search-button">search</button>
+          
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div class="card-container container flex" id="card-container">
+       
+      </div>
+    </main>
+    <template class="template-news-card" id="template-news-card">
+        <div class="card">
+            <div >
+              <img src="https://via.placeholder.com/400x200" alt=""  id="news-image" class="card-header"/>
+            </div>
+            <div class="card-content">
+              <h3 id="news-title">This is the title</h3>
+              <h6 id="news-source">Time Now 20/06/2023</h6>
+              <p class="news-des" id="news-des">
+                dolores quidem sint in odit ex voluptatibus vitae itaque delectus,
+                omnis nam sunt ipsa animi consequatur aliquam culpa!.
+              </p>
+            </div>
+          </div>
+    </template>
+
+
+  </body>
+  <script src="script.js"></script>
+</html>
